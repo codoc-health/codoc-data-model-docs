@@ -6,7 +6,7 @@ concept_str,Human-readable name or label of the concept., ,varchar(2000),Yes,No,
 description,Extended description or definition of the concept., ,varchar(4000),No,No,No," "
 measuring_unit,"Measurement unit for quantitative concepts (e.g., mg, mmHg).", ,varchar(50),No,No,No," "
 value_type,Type of value expected,"*numeric* : quantitative value <br> *text*: free-text value <br> *present* : presence/absence indicator <br> *liste* : enumerated values",varchar(50),Yes,No,No," "
-list_values,List of values when type is *liste* else *null*,"Values should be split by *;* (e.g. *principal;associé;relié*"),varchar(4000),No,No,No," "
+list_values,List of values when type is *liste* else *null*,"Values should be split by *;* (e.g. *principal;associé;relié*)",varchar(4000),No,No,No," "
 thesaurus_parent_num,Parent concept in the hierarchy., ,bigint(64),No,No,Yes,dwh_thesaurus_data
 count_data_used,Count of *dwh_data* associated with this concept, ,integer(32),No,No,No," "
 update_date,Date and time of the record’s last update., ,timestamptz,No,No,No," "
