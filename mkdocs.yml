@@ -1,6 +1,6 @@
 site_name: Data Model
-site_url: https://codoc-os.github.io/codoc-data-model-docs/
-repo_url: https://github.com/codoc-os/codoc-data-model-docs
+site_url: https://codoc-health.github.io/codoc-data-model-docs/
+repo_url: https://github.com/codoc-health/codoc-data-model-docs
 theme:
   name: material
   language: en
@@ -47,6 +47,13 @@ markdown_extensions:
       toc_depth: 1
   - pymdownx.superfences
   - pymdownx.tabbed
+
+# Turn these link and nav problems into warnings, so `mkdocs build --strict` fails on them.
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
 
 nav:
   - 'Overview': index.md
