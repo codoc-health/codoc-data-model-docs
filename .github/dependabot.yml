@@ -1,0 +1,19 @@
+# Version updates, grouped into one monthly pull request per ecosystem.
+# Security updates are separate and still arrive as soon as an advisory is published.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      python-packages:
+        patterns: ["*"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      github-actions:
+        patterns: ["*"]
