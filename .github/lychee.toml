@@ -1,0 +1,6 @@
+# Settings for the weekly link check (.github/workflows/links.yml).
+no_progress = true
+
+# MkDocs' 404 page links with absolute paths meant for the published site,
+# which don't exist in a local build. Every other page links relatively.
+exclude_path = ['404\.html$']
